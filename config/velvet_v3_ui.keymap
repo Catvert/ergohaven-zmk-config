@@ -184,7 +184,7 @@
     };
 };
 
-&trackball { cpi = <1000>; };
+&trackball { cpi = <750>; };
 
 &trackball_listener {
     input-processors = <&zip_xy_scaler 9 20>;
@@ -199,6 +199,6 @@
 
     sniper {
         layers = <6>;
-        input-processors = <&zip_xy_scaler 1 4>;
+        input-processors = <&zip_xy_scaler 1 8>;
     };
 };
