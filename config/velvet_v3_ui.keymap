@@ -25,7 +25,7 @@
         a_circonflexe: a_circonflexe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp Q>;
+            bindings = <&kp LS(LEFT_BRACE) &kp Q>;
             label = "A_CIRCONFLEXE";
         };
     };
@@ -57,10 +57,10 @@
 
         sym {
             bindings = <
-&trans  &a_circonflexe       &kp LT  &kp EQUAL  &kp GT      &kp GRAVE                      &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
-&trans  &kp N0               &trans  &kp MINUS  &kp RPAR    &kp PLUS                       &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &kp RA(NON_US_BSLH)  &trans  &kp N9     &kp FSLH    &kp DLLR                       &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
-                             &trans  &trans     &kp DELETE  &mo 3      &kp HASH    &trans  &trans     &trans    &trans     &trans
+&trans  &a_circonflexe       &kp LT  &kp EQUAL  &kp GT      &kp GRAVE                                  &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
+&trans  &kp N0               &trans  &kp MINUS  &kp RPAR    &kp RA(LEFT_BRACKET)                       &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
+&trans  &kp RA(NON_US_BSLH)  &trans  &kp N9     &kp FSLH    &kp RA(RIGHT_BRACKET)                      &kp AT     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
+                             &trans  &trans     &kp DELETE  &mo 3                  &kp HASH    &trans  &trans     &trans    &trans     &trans
             >;
 
             display-name = "Symbols";
