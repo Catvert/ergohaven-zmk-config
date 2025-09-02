@@ -28,6 +28,27 @@
             bindings = <&kp N6 &kp Q>;
             label = "A_CIRCONFLEXE";
         };
+
+        e_circonflexe: e_circonflexe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N6 &kp E>;
+            label = "E_CIRCONFLEXE";
+        };
+
+        o_circonflexe: o_circonflexe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N6 &kp O>;
+            label = "O_CIRCONFLEXE";
+        };
+
+        i_circonflexe: i_circonflexe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N6 &kp I>;
+            label = "I_CIRCONFLEXE";
+        };
     };
 
     keymap {
@@ -57,9 +78,9 @@
 
         sym {
             bindings = <
-&trans  &a_circonflexe       &kp RA(E)   &kp FSLH    &kp N1      &kp RA(N1)                                 &kp RA(BACKSLASH)     &kp RA(SINGLE_QUOTE)  &kp SINGLE_QUOTE  &kp N8    &kp N8    &trans
-&trans  &kp N0               &kp RA(N9)  &kp PERIOD  &kp N5      &kp RA(LEFT_BRACKET)                       &kp PRCNT             &kp N7                &kp N2            &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &kp RA(NON_US_BSLH)  &kp RA(N0)  &kp N9      &kp MINUS   &kp RA(RIGHT_BRACKET)                      &kp LS(SINGLE_QUOTE)  &kp N3                &kp N4            &kp N6    &trans    &trans
+&trans  &a_circonflexe       &kp RA(E)   &kp FSLH    &kp N1      &kp RA(N1)                                 &kp RA(BACKSLASH)     &kp RA(SINGLE_QUOTE)  &kp SINGLE_QUOTE  &kp N8          &kp N8          &trans
+&trans  &kp N0               &kp RA(N9)  &kp PERIOD  &kp N5      &kp RA(LEFT_BRACKET)                       &e_circonflexe        &kp N7                &kp N2            &i_circonflexe  &o_circonflexe  &trans
+&trans  &kp RA(NON_US_BSLH)  &kp RA(N0)  &kp N9      &kp MINUS   &kp RA(RIGHT_BRACKET)                      &kp LS(SINGLE_QUOTE)  &kp N3                &kp N4            &kp N6          &kp COMMA       &kp RA(N3)
                              &trans      &trans      &kp DELETE  &mo 3                  &kp HASH    &trans  &trans                &trans                &trans            &trans
             >;
 
