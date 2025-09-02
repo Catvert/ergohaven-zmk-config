@@ -63,10 +63,10 @@
 
         base {
             bindings = <
-&kp TAB         &kp A  &kp Z            &kp F  &kp P      &kp B                                  &kp J     &kp L           &kp U         &kp Y                &kp EQUAL  &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &kp Q  &kp R            &kp S  &kp T      &kp G                                  &kp SEMI  &kp N           &kp E         &kp I                &kp O      &mt RIGHT_SHIFT PERIOD
-&kp LCTRL       &kp W  &kp X            &kp C  &kp D      &kp V                                  &kp K     &kp H           &kp M         &kp LS(COMMA)        &kp LGUI   &kp RETURN
-                       &kp NON_US_BSLH  &mo 5  &lt 1 ESC  &kp SPACE  &kp LCTRL    &kp BACKSPACE  &mo 2     &cap_sen 4 MB1  &kp LEFT_ALT  &kp LS(NON_US_BSLH)
+&kp TAB         &kp A  &kp Z            &kp F  &kp P      &kp B                                  &kp J     &kp L  &kp U         &kp Y                &kp EQUAL  &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &kp Q  &kp R            &kp S  &kp T      &kp G                                  &kp SEMI  &kp N  &kp E         &kp I                &kp O      &mt RIGHT_SHIFT PERIOD
+&kp LCTRL       &kp W  &kp X            &kp C  &kp D      &kp V                                  &kp K     &kp H  &kp M         &kp LS(COMMA)        &kp LGUI   &kp RETURN
+                       &kp NON_US_BSLH  &mo 5  &lt 1 ESC  &kp SPACE  &kp LCTRL    &kp BACKSPACE  &mo 2     &mo 4  &kp LEFT_ALT  &kp LS(NON_US_BSLH)
             >;
 
             display-name = "Base";
