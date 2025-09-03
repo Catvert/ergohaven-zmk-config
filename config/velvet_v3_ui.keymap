@@ -66,21 +66,10 @@
 &kp RA(NUMBER_2)  &kp A  &kp Z            &kp F  &kp P      &kp B                                &kp J     &kp L  &kp U         &kp Y                &kp EQUAL  &kp RIGHT_BRACKET
 &kp LEFT_SHIFT    &kp Q  &kp R            &kp S  &kp T      &kp G                                &kp SEMI  &kp N  &kp E         &kp I                &kp O      &mt RIGHT_SHIFT PERIOD
 &kp LCTRL         &kp W  &kp X            &kp C  &kp D      &kp V                                &kp K     &kp H  &kp M         &kp LS(COMMA)        &kp LGUI   &kp RETURN
-                         &kp NON_US_BSLH  &mo 6  &lt 2 ESC  &kp SPACE  &kp TAB    &kp BACKSPACE  &mo 3     &mo 5  &kp LEFT_ALT  &kp LS(NON_US_BSLH)
+                         &kp NON_US_BSLH  &mo 5  &lt 1 ESC  &kp SPACE  &kp TAB    &kp BACKSPACE  &mo 2     &mo 4  &kp LEFT_ALT  &kp LS(NON_US_BSLH)
             >;
 
             display-name = "Base";
-        };
-
-        qwerty {
-            bindings = <
-&trans  &kp A  &kp Z   &kp E   &kp R   &kp T                     &kp Y   &kp U      &kp I   &kp O          &kp P          &kp RIGHT_BRACKET
-&trans  &kp Q  &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J      &kp K   &kp L          &kp SEMICOLON  &trans
-&trans  &kp W  &kp X   &kp C   &kp V   &kp B                     &kp N   &kp EQUAL  &kp M   &kp LS(COMMA)  &trans         &trans
-               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans
-            >;
-
-            display-name = "Qwerty";
         };
 
         nav {
@@ -88,7 +77,7 @@
 &trans  &kp LS(N1)  &kp LS(N2)      &kp LS(N3)       &kp LS(N4)  &kp LS(N5)                               &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &kp F11
 &trans  &none       &kp LEFT_ARROW  &kp DOWN         &kp UP      &kp RIGHT_ARROW                          &trans      &none       &none       &none       &none       &kp F12
 &trans  &kp F1      &kp F2          &kp F3           &kp F4      &kp F5                                   &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &trans
-                    &trans          &kp PRINTSCREEN  &trans      &trans           &kp LEFT_GUI    &trans  &mo 4       &trans      &trans      &trans
+                    &trans          &kp PRINTSCREEN  &trans      &trans           &kp LEFT_GUI    &trans  &mo 3       &trans      &trans      &trans
             >;
 
             display-name = "Navigation";
@@ -108,7 +97,7 @@
         adj {
             bindings = <
 &bootloader  &none  &none  &none  &none   &none                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &none  &none  &tog 1  &none                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
+&none        &none  &none  &none  &tog 8  &none                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
 &none        &none  &none  &none  &none   &none                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
                     &none  &none  &none   &none  &none    &none  &none         &none         &none             &none
             >;
@@ -120,8 +109,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans  &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &mkp MB3  &mkp MB1  &mo 6   &mkp MB2  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &mo 7   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &mkp MB3  &mkp MB1  &mo 5   &mkp MB2  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &mo 6   &trans
             >;
 
             display-name = "Mouse";
@@ -147,6 +136,17 @@
             >;
 
             display-name = "Sniper";
+        };
+
+        qwerty {
+            bindings = <
+&trans  &kp A  &kp Z   &kp E   &kp R   &kp T                     &kp Y   &kp U      &kp I   &kp O          &kp P          &kp RIGHT_BRACKET
+&trans  &kp Q  &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J      &kp K   &kp L          &kp SEMICOLON  &trans
+&trans  &kp W  &kp X   &kp C   &kp V   &kp B                     &kp N   &kp EQUAL  &kp M   &kp LS(COMMA)  &trans         &trans
+               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans
+            >;
+
+            display-name = "Qwerty";
         };
 
         User1 {
